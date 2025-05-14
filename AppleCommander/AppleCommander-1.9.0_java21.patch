@@ -1,0 +1,211 @@
+diff -ruN AppleCommander-1.9.0.orig/app/ant-ac/build.gradle AppleCommander-1.9.0/app/ant-ac/build.gradle
+--- AppleCommander-1.9.0.orig/app/ant-ac/build.gradle	2023-10-31 21:41:05.000000000 -0700
++++ AppleCommander-1.9.0/app/ant-ac/build.gradle	2025-05-10 21:32:24.879655519 -0700
+@@ -2,8 +2,10 @@
+     id 'java-library'
+ }
+ 
+-sourceCompatibility = 11
+-targetCompatibility = 11
++java {
++    sourceCompatibility = 21
++    targetCompatibility = 21
++}
+ 
+ repositories {
+     mavenCentral()
+diff -ruN AppleCommander-1.9.0.orig/app/cli-ac/build.gradle AppleCommander-1.9.0/app/cli-ac/build.gradle
+--- AppleCommander-1.9.0.orig/app/cli-ac/build.gradle	2023-10-31 21:41:05.000000000 -0700
++++ AppleCommander-1.9.0/app/cli-ac/build.gradle	2025-05-10 21:11:00.032449844 -0700
+@@ -3,8 +3,10 @@
+     id 'application'
+ }
+ 
+-sourceCompatibility = 11
+-targetCompatibility = 11
++java {
++    sourceCompatibility = 21
++    targetCompatibility = 21
++}
+ 
+ repositories {
+     mavenCentral()
+diff -ruN AppleCommander-1.9.0.orig/app/cli-acx/build.gradle AppleCommander-1.9.0/app/cli-acx/build.gradle
+--- AppleCommander-1.9.0.orig/app/cli-acx/build.gradle	2023-10-31 21:41:05.000000000 -0700
++++ AppleCommander-1.9.0/app/cli-acx/build.gradle	2025-05-10 21:32:20.479651961 -0700
+@@ -4,8 +4,10 @@
+     id 'application'
+ }
+ 
+-sourceCompatibility = 11
+-targetCompatibility = 11
++java {
++    sourceCompatibility = 21
++    targetCompatibility = 21
++}
+ 
+ repositories {
+     mavenCentral()
+diff -ruN AppleCommander-1.9.0.orig/app/gui-swt-linux-aarch64/build.gradle AppleCommander-1.9.0/app/gui-swt-linux-aarch64/build.gradle
+--- AppleCommander-1.9.0.orig/app/gui-swt-linux-aarch64/build.gradle	2023-10-31 21:41:05.000000000 -0700
++++ AppleCommander-1.9.0/app/gui-swt-linux-aarch64/build.gradle	2025-05-10 21:32:38.707666705 -0700
+@@ -3,8 +3,10 @@
+     id 'application'
+ }
+ 
+-sourceCompatibility = 11
+-targetCompatibility = 11
++java {
++    sourceCompatibility = 21
++    targetCompatibility = 21
++}
+ 
+ repositories {
+     mavenCentral()
+diff -ruN AppleCommander-1.9.0.orig/app/gui-swt-linux-arm/build.gradle AppleCommander-1.9.0/app/gui-swt-linux-arm/build.gradle
+--- AppleCommander-1.9.0.orig/app/gui-swt-linux-arm/build.gradle	2023-10-31 21:41:05.000000000 -0700
++++ AppleCommander-1.9.0/app/gui-swt-linux-arm/build.gradle	2025-05-10 21:32:30.275659884 -0700
+@@ -3,8 +3,10 @@
+     id 'application'
+ }
+ 
+-sourceCompatibility = 11
+-targetCompatibility = 11
++java {
++    sourceCompatibility = 21
++    targetCompatibility = 21
++}
+ 
+ repositories {
+     mavenCentral()
+diff -ruN AppleCommander-1.9.0.orig/app/gui-swt-linux-x86_64/build.gradle AppleCommander-1.9.0/app/gui-swt-linux-x86_64/build.gradle
+--- AppleCommander-1.9.0.orig/app/gui-swt-linux-x86_64/build.gradle	2023-10-31 21:41:05.000000000 -0700
++++ AppleCommander-1.9.0/app/gui-swt-linux-x86_64/build.gradle	2025-05-10 21:32:34.087662968 -0700
+@@ -3,8 +3,10 @@
+     id 'application'
+ }
+ 
+-sourceCompatibility = 11
+-targetCompatibility = 11
++java {
++    sourceCompatibility = 21
++    targetCompatibility = 21
++}
+ 
+ repositories {
+     mavenCentral()
+diff -ruN AppleCommander-1.9.0.orig/app/gui-swt-macosx-aarch64/build.gradle AppleCommander-1.9.0/app/gui-swt-macosx-aarch64/build.gradle
+--- AppleCommander-1.9.0.orig/app/gui-swt-macosx-aarch64/build.gradle	2023-10-31 21:41:05.000000000 -0700
++++ AppleCommander-1.9.0/app/gui-swt-macosx-aarch64/build.gradle	2025-05-10 21:32:46.843673289 -0700
+@@ -3,8 +3,10 @@
+     id 'application'
+ }
+ 
+-sourceCompatibility = 11
+-targetCompatibility = 11
++java {
++    sourceCompatibility = 21
++    targetCompatibility = 21
++}
+ 
+ repositories {
+     mavenCentral()
+diff -ruN AppleCommander-1.9.0.orig/app/gui-swt-macosx-x86_64/build.gradle AppleCommander-1.9.0/app/gui-swt-macosx-x86_64/build.gradle
+--- AppleCommander-1.9.0.orig/app/gui-swt-macosx-x86_64/build.gradle	2023-10-31 21:41:05.000000000 -0700
++++ AppleCommander-1.9.0/app/gui-swt-macosx-x86_64/build.gradle	2025-05-10 21:32:55.068676282 -0700
+@@ -3,8 +3,10 @@
+     id 'application'
+ }
+ 
+-sourceCompatibility = 11
+-targetCompatibility = 11
++java {
++    sourceCompatibility = 21
++    targetCompatibility = 21
++}
+ 
+ repositories {
+     mavenCentral()
+diff -ruN AppleCommander-1.9.0.orig/app/gui-swt-win32-x86_64/build.gradle AppleCommander-1.9.0/app/gui-swt-win32-x86_64/build.gradle
+--- AppleCommander-1.9.0.orig/app/gui-swt-win32-x86_64/build.gradle	2023-10-31 21:41:05.000000000 -0700
++++ AppleCommander-1.9.0/app/gui-swt-win32-x86_64/build.gradle	2025-05-10 21:32:51.435675679 -0700
+@@ -3,8 +3,10 @@
+     id 'application'
+ }
+ 
+-sourceCompatibility = 11
+-targetCompatibility = 11
++java {
++    sourceCompatibility = 21
++    targetCompatibility = 21
++}
+ 
+ repositories {
+     mavenCentral()
+diff -ruN AppleCommander-1.9.0.orig/gradle/wrapper/gradle-wrapper.properties AppleCommander-1.9.0/gradle/wrapper/gradle-wrapper.properties
+--- AppleCommander-1.9.0.orig/gradle/wrapper/gradle-wrapper.properties	2023-10-31 21:41:05.000000000 -0700
++++ AppleCommander-1.9.0/gradle/wrapper/gradle-wrapper.properties	2025-05-10 21:07:25.094446196 -0700
+@@ -1,5 +1,5 @@
+ distributionBase=GRADLE_USER_HOME
+ distributionPath=wrapper/dists
+-distributionUrl=https\://services.gradle.org/distributions/gradle-7.3.1-bin.zip
++distributionUrl=https\://services.gradle.org/distributions/gradle-8.4-bin.zip
+ zipStoreBase=GRADLE_USER_HOME
+ zipStorePath=wrapper/dists
+diff -ruN AppleCommander-1.9.0.orig/gradle.properties AppleCommander-1.9.0/gradle.properties
+--- AppleCommander-1.9.0.orig/gradle.properties	2023-10-31 21:41:05.000000000 -0700
++++ AppleCommander-1.9.0/gradle.properties	2025-05-10 21:34:07.908268321 -0700
+@@ -15,5 +15,5 @@
+ commonsCsvVersion=1.8
+ gsonVersion=2.8.9
+ picocliVersion=4.6.2
+-springBoot=2.6.1
++springBoot=3.2.0
+ acdasmVersion=0.5.0
+diff -ruN AppleCommander-1.9.0.orig/lib/ac-api/build.gradle AppleCommander-1.9.0/lib/ac-api/build.gradle
+--- AppleCommander-1.9.0.orig/lib/ac-api/build.gradle	2023-10-31 21:41:05.000000000 -0700
++++ AppleCommander-1.9.0/lib/ac-api/build.gradle	2025-05-10 21:31:12.510636474 -0700
+@@ -7,8 +7,10 @@
+ ext.isSnapshotVersion = version.endsWith("SNAPSHOT")
+ ext.isReleaseVersion = !ext.isSnapshotVersion
+ 
+-sourceCompatibility = 11
+-targetCompatibility = 11
++java {
++    sourceCompatibility = 21
++    targetCompatibility = 21
++}
+ 
+ repositories {
+     mavenCentral()
+@@ -41,12 +43,12 @@
+ }
+ 
+ task javadocJar(type: Jar) {
+-    classifier = 'javadoc'
++    archiveClassifier = 'javadoc'
+     from javadoc
+ }
+ 
+ task sourcesJar(type: Jar) {
+-    classifier = 'sources'
++    archiveClassifier = 'sources'
+     from sourceSets.main.allSource
+ }
+ 
+diff -ruN AppleCommander-1.9.0.orig/lib/ac-swt-common/build.gradle AppleCommander-1.9.0/lib/ac-swt-common/build.gradle
+--- AppleCommander-1.9.0.orig/lib/ac-swt-common/build.gradle	2023-10-31 21:41:05.000000000 -0700
++++ AppleCommander-1.9.0/lib/ac-swt-common/build.gradle	2025-05-10 21:32:13.363646207 -0700
+@@ -2,8 +2,10 @@
+     id 'java-library'
+ }
+ 
+-sourceCompatibility = 11
+-targetCompatibility = 11
++java {
++    sourceCompatibility = 21
++    targetCompatibility = 21
++}
+ 
+ repositories {
+     mavenCentral()

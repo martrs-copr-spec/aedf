@@ -1,0 +1,47 @@
+--- ecmtools.orig/src/ecm.c	2016-12-06 08:03:09.000000000 -0800
++++ ecmtools/src/ecm.c	2017-07-09 20:20:46.667301403 -0700
+@@ -32,6 +32,7 @@
+ #include <stdio.h>
+ #include <stdlib.h>
+ #include <string.h>
++#include <stdint.h>
+ 
+ /***************************************************************************/
+ 
+@@ -45,9 +46,9 @@
+ /***************************************************************************/
+ 
+ /* Data types */
+-#define ecc_uint8 unsigned char
+-#define ecc_uint16 unsigned short
+-#define ecc_uint32 unsigned
++#define ecc_uint8 uint8_t
++#define ecc_uint16 uint16_t
++#define ecc_uint32 uint32_t
+ 
+ /* LUTs used for computing ECC/EDC */
+ static ecc_uint8 ecc_f_lut[256];
+--- ecmtools.orig/src/unecm.c	2016-12-06 08:03:09.000000000 -0800
++++ ecmtools/src/unecm.c	2017-07-09 20:21:49.881456781 -0700
+@@ -32,7 +32,7 @@
+ #include <stdio.h>
+ #include <stdlib.h>
+ #include <string.h>
+-#include "unecm.h"
++#include <stdint.h>
+ 
+ /***************************************************************************/
+ 
+@@ -46,9 +46,9 @@
+ /***************************************************************************/
+ 
+ /* Data types */
+-#define ecc_uint8 unsigned char
+-#define ecc_uint16 unsigned short
+-#define ecc_uint32 unsigned
++#define ecc_uint8 uint8_t
++#define ecc_uint16 uint16_t
++#define ecc_uint32 uint32_t
+ 
+ /* LUTs used for computing ECC/EDC */
+ static ecc_uint8 ecc_f_lut[256];
