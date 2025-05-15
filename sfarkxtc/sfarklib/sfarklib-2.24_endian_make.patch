@@ -1,13 +1,12 @@
 diff -ruN sfArkLib-2.24.orig/Makefile sfArkLib-2.24.new/Makefile
 --- sfArkLib-2.24.orig/Makefile	2025-05-15 01:14:21.063819350 -0700
-+++ sfArkLib-2.24.new/Makefile	2025-05-15 01:30:32.551854202 -0700
-@@ -26,5 +26,7 @@
++++ sfArkLib-2.24.new/Makefile	2025-05-15 01:47:15.075734273 -0700
+@@ -26,5 +26,6 @@
  	$(CXX) -shared $(LDFLAGS) $(OBJECTS) -o libsfark.$(SO)
  
  install: libsfark.$(SO) sfArkLib.h
 -	$(INSTALL) libsfark.$(SO) $(DESTDIR)/usr/local/lib/libsfark.$(SO)
 -	$(INSTALL) sfArkLib.h $(DESTDIR)/usr/local/include/sfArkLib.h
-+	echo "INSTALL=$(INSTALL)"
 +	$(INSTALL) -D libsfark.$(SO) $(DESTDIR)/usr/lib64/libsfark.$(SO).0
 +	$(INSTALL) -D sfArkLib.h $(DESTDIR)/usr/include/sfArkLib.h
 +	ln -s libsfark.$(SO).0 $(DESTDIR)/usr/lib64/libsfark.$(SO)
