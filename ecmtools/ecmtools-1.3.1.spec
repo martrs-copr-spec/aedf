@@ -5,7 +5,7 @@ Summary:        ECM encode/decode utilities
 
 License:        GPLv2
 URL:            http://www.neillcorlett.com/ecm/
-Source0:        https://github.com/kidoz/ecm/archive/v%{version}.tar.gz/#%{name}-%{version}.tar.gz
+Source0:        https://github.com/kidoz/ecm/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
 BuildRequires:  gcc glibc-devel meson
 
 %description
