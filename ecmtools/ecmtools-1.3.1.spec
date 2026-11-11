@@ -1,5 +1,5 @@
 Name:           ecmtools
-Version:        1.3.1
+Version:        1.3.4
 Release:        1%{?dist}
 Summary:        ECM encode/decode utilities
 
@@ -43,6 +43,8 @@ different sector types and automatically skips any headers it encounters.
 
 
 %changelog
+* Tue Nov 10 2026 Martin RS - 1.3.4
+- 1.3.4
 * Sat May 2 2026 Martin RS - 1.3.1
 - 1.3.1
 * Sun Jul 5 2020 Martin RS - 1.0git20180207
